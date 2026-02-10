@@ -20,7 +20,8 @@ export default function ProfileDetail() {
   useEffect(() => {
     if (!id) return;
 
-    fetch(`http://localhost:5000/api/profiles/${id}`)
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+    fetch(`${apiUrl}/api/profiles/${id}`)
       .then(res => {
         if (res.status === 404) {
           setNotFound(true);
