@@ -28,17 +28,15 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-     
-      <header className="bg-white shadow-sm py-6 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div>
-            <h1 className="text-2xl md:text-3xl font-bold text-gray-800">PRME</h1>
-            <p className="text-xs text-gray-500">Principles for Responsible Management Education</p>
-          </div>
-          <div className="text-right">
-            <div className="text-sm md:text-base font-semibold text-green-600">AACSB</div>
-            <p className="text-xs text-gray-500">ACCREDITED</p>
-          </div>
+
+      <header className="bg-white shadow-sm py-6 px-6 flex justify-between items-center">
+        <div>
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-800">PRME</h1>
+          <p className="text-xs text-gray-500">Principles for Responsible Management Education</p>
+        </div>
+        <div className="text-right">
+          <div className="text-sm md:text-base font-semibold text-green-600">AACSB</div>
+          <p className="text-xs text-gray-500">ACCREDITED</p>
         </div>
       </header>
 
