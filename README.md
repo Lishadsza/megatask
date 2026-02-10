@@ -1,21 +1,37 @@
 # Student Profile Management System
 
-A full-stack web application for managing and displaying student profiles with visual resumes and case studies.
+A modern, responsive web application for managing and showcasing student profiles with skills, case studies, and video resumes.
 
-## Tech Stack
+## 🚀 Live Demo
 
-**Frontend:** Next.js, Tailwind CSS  
-**Backend:** Node.js, Express.js
+**Frontend:** https://megataskfrontendd.vercel.app  
+**Backend API:** https://megataskbackend.vercel.app
 
-## Quick Start
+## ✨ Features
 
-### Backend
-```bash
-cd backend
-npm install
-npm start
-```
-Server runs on `http://localhost:5000`
+- 📱 Fully responsive design (mobile, tablet, desktop)
+- 👤 Student profile cards with avatars and details
+- 🎯 Detailed profile pages with skills and case studies
+- 🎥 Video resume integration
+- 📊 Case insights carousel
+- 📧 Contact information and social links
+- 🎨 Modern UI with Tailwind CSS
+
+## 🛠️ Tech Stack
+
+**Frontend:**
+- Next.js
+- React
+- Tailwind CSS
+- Vercel (Deployment)
+
+**Backend:**
+- Node.js
+- Express
+- CORS
+- Vercel (Deployment)
+
+## 📦 Installation
 
 ### Frontend
 ```bash
@@ -23,34 +39,56 @@ cd frontend
 npm install
 npm run dev
 ```
-App runs on `http://localhost:3000`
 
-## Features
+### Backend
+```bash
+cd backend
+npm install
+npm start
+```
 
-- Profile grid with search and filtering
-- Dynamic profile detail pages
-- Case studies carousel
-- Video resume integration
-- Responsive design (mobile & desktop)
-- RESTful API
+## 🌐 Environment Variables
 
-## Project Structure
+**Frontend (.env.production):**
+```
+NEXT_PUBLIC_API_URL=https://megataskbackend.vercel.app
+```
+
+## 📁 Project Structure
 
 ```
+megatask/
+├── frontend/
+│   ├── components/
+│   │   ├── ProfileCard.js
+│   │   ├── CaseInsightsSection.js
+│   │   └── EmptyState.js
+│   ├── pages/
+│   │   ├── index.js
+│   │   └── profile/[id].js
+│   └── styles/
+│       └── globals.css
 ├── backend/
-│   ├── data/profiles.js    # Profile data
-│   └── server.js            # Express API
-└── frontend/
-    ├── components/          # Reusable components
-    ├── pages/               # Next.js pages
-    └── styles/              # Global styles
+│   ├── server.js
+│   └── data/
+│       └── profiles.js
+└── README.md
 ```
 
-## API Endpoints
+## 👥 Student Profiles
 
-- `GET /api/profiles` - Get all profiles
-- `GET /api/profiles/:id` - Get profile by ID
+The system includes 6 student profiles:
+- Sarah John
+- Saman S
+- Sera Rodriguez
+- David John
+- Jessica N
+- Deru Thompson
 
-## Deployment
+## 📄 License
 
-Ready for Vercel deployment with included `vercel.json` configuration files.
+MIT
+
+## 👨‍💻 Author
+
+NMIMS Bangalore - PRME & AACSB Accredited
