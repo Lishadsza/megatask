@@ -171,12 +171,17 @@ export default function ProfileDetail() {
 
       {/* Skills */}
       <div className="max-w-5xl mx-auto px-4 mb-12">
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {profile.skills && profile.skills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center gap-2 opacity-40 hover:opacity-100 transition-opacity">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-xs font-semibold text-gray-600">{skill.substring(0, 2).toUpperCase()}</span>
-              </div>
+            <div
+              key={index}
+              className="w-20 h-20 bg-gray-100 rounded-xl flex items-center justify-center opacity-30 hover:opacity-100 transition-all"
+            >
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-10 h-10 object-contain grayscale"
+              />
             </div>
           ))}
         </div>
